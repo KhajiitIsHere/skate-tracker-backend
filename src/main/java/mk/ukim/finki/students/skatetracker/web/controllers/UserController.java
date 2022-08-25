@@ -37,6 +37,7 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity register(@RequestBody LoginUserDto loginUser){
+        System.out.println("hehe");
         try {
             UserDto userDto = userService.register(loginUser.getUsername(), loginUser.getPassword());
             return ResponseEntity.ok(userDto);
