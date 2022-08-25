@@ -10,6 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/my-tricks")
 @CrossOrigin(origins = "https://skate-helper-frontend.herokuapp.com")
+//@CrossOrigin(origins = "http://localhost:3000")
 public class SkateTrickProgressController {
 
     private final SkateTrickProgressService skateTrickProgressService;
